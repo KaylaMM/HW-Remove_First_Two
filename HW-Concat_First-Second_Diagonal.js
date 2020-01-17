@@ -27,4 +27,29 @@ const someArr1 = [
 console.log(concatFirstDiagonal(someArr1));
 // ==> "Lisbon"
 
+//=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
 
+function concatSecondDiagonal(twoDimArray) {
+  // your code goes here
+   let newArr = []
+   let x = twoDimArray.length-1
+for(let i=0; i < twoDimArray.length; i++){
+  newArr.push(twoDimArray[i][x])
+  // console.log(i,x)
+  x--
+}
+return newArr.join('');
+}
+
+const someArr2 = [
+['L','z','x','C','v','B'],
+['t','i','I','p','e','7'],
+['w','y','s','r','m','x'],
+['q','U','l','b','k','H'],
+['A','i','G','Y','o','L'],
+['n','f','d','W','z','n']
+];
+
+// solution:
+console.log(concatSecondDiagonal(someArr2));
+// ==> "Berlin"
