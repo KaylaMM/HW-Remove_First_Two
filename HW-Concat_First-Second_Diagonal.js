@@ -2,12 +2,17 @@ function concatFirstDiagonal(twoDimArray) {
     // your code goes here
     // index of array I'm in matches the index of the string I need
     let newArr = []
-  for(i=0;i < twoDimArray.length; i++){
-    if(i === twoDimArray[i][i]){
-      return newArr.push();
+    for(i=0;i < twoDimArray.length; i++){
+      newArr.push(twoDimArray[i][i])
+  //FIRST ATTEMPT: return came too soon, syntax off
+  //   let newArr = []
+  // for(i=0;i < twoDimArray.length; i++){
+  //   if(i === twoDimArray[i][i]){
+  //     return newArr.push();
     }
-  }
-}
+    return newArr.join('');
+};
+  
 
 const someArr1 = [
   ['L','z','x','C','v','B'],
@@ -21,3 +26,5 @@ const someArr1 = [
 // solution:
 console.log(concatFirstDiagonal(someArr1));
 // ==> "Lisbon"
+
+
